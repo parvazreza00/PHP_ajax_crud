@@ -25,10 +25,26 @@ function read(){
         url:'read.php',
         data:{read:read},
         success:function(data){
-            $("#tbody").html
+            $("#tbody").html(data);
         }
     });
 }
 
-
 //reading secion end here....
+
+//delete secion start here....
+function Delete(userid){
+    $con = confirm("Are you sure to delete?");
+    if($con == true){
+        $.ajax({
+            url:"delete.php",
+            method:"POST",
+            data:{userid:userid},
+            success:function(){
+                read();
+            }
+        });
+    }
+   
+}
+//delete secion end here....

@@ -19,9 +19,11 @@
 <h2 class="text-center">Reading Data from database</h2>
 <table class="table">
     <thead>
+        <th>ID</th>
         <th>Name</th>
         <th>Email</th>
         <th>Password</th>
+        <th>Action</th>
     </thead>
     <tbody id="tbody">
 
