@@ -12,6 +12,7 @@ while($row= mysqli_fetch_array($query)){ ?>
         <td><?php echo $row['email']; ?></td>
         <td><?php echo $row['password']; ?></td>
         <td><button onclick=Delete(<?php echo $row['id']; ?>)>Delete</button></td>
+        <td><button onclick=Edit(<?php echo $row['id']; ?>)>Edit</button></td>
     </tr>
 
 

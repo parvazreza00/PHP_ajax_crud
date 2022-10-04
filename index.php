@@ -23,7 +23,8 @@
         <th>Name</th>
         <th>Email</th>
         <th>Password</th>
-        <th>Action</th>
+        <th>Delete</th>
+        <th>Edit</th>
     </thead>
     <tbody id="tbody">
 

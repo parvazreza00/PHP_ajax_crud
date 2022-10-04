@@ -48,3 +48,36 @@ function Delete(userid){
    
 }
 //delete secion end here....
+//Edit secion start here....
+
+function Edit(userid){
+    
+
+    $.ajax({
+        mehtod:"GET",
+        url:"edit.php",
+        data:{userid:userid},
+        success:function(data){
+            $("body").html(data);
+        }
+    });
+
+}
+//edit section end ......
+//update sercito start.....
+
+function Update(userid){
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    $.ajax({
+        url:"update.php",
+        mehtod:"GET",
+        data:{name:name, email:email, password:password, userid:userid},
+        success:function(data){
+            alert(data);
+        }
+    });
+}
+//update section end......
