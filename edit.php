@@ -26,7 +26,8 @@ $password = $row['password'];
     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name..." value="<?php echo $name;?>"><br>
     <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email..." value="<?php echo $email;?>"><br>
     <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password..." value="<?php echo $password;?>"><br>
-    <button class="btn btn-primary" id="button" onclick=Update(<?php echo $row['id']; ?>)>Edit Data</button>
+    <button class="btn btn-primary" id="button" onclick=Update(<?php echo $row['id']; ?>)>Update Data</button>
+    <button class="btn btn-primary" id="button" onclick="home()">Home</button>
 
 </div>
 </body>

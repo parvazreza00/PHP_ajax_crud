@@ -16,6 +16,7 @@
 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email..."><br>
 <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password..."><br>
 <button class="btn btn-primary" id="button">Insert Data</button>
+<button class="btn btn-success text-align-right " id="button1">Read Data</button>
 <h2 class="text-center">Reading Data from database</h2>
 <table class="table">
     <thead>

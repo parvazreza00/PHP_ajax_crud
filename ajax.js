@@ -76,8 +76,32 @@ function Update(userid){
         mehtod:"GET",
         data:{name:name, email:email, password:password, userid:userid},
         success:function(data){
-            alert(data);
+            read();
         }
     });
 }
 //update section end......
+
+$("#button1").click(function(){
+    var read="";
+    $.ajax({
+        method: "POST",
+        url:'read.php',
+        data:{read:read},
+        success:function(data){
+            $("#tbody").html(data);
+        }
+    });
+});
+
+function home(){
+    var read="";
+    $.ajax({
+        method: "POST",
+        url:'index.php',
+        data:{read:read},
+        success:function(data){
+            $("body").html(data);
+        }
+    });
+}
